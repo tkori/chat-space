@@ -1,0 +1,17 @@
+@import "./reset";
+@import "font-awesome";
+@import "./sidebar";
+@import "./main";
+
+.flash-msg {
+  width: 100vw;
+  color: white;
+  background-color: #38aef0;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
