@@ -2,9 +2,11 @@
   .main__header
     .main__header__box
       %p.main__header__box--current-group
-        test_group
+        = @group.name
       %p.main__header__box--current-members
-        Member: test_user1, test_user2
+        Member :
+        - @group.users.each do |user|
+          = user.name
     .main__header--edit-btn
       Edit
 
