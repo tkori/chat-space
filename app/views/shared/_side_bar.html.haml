@@ -1,0 +1,21 @@
+.sidebar
+  .sidebar__header
+    .sidebar__header__box
+      %p.sidebar__header__box--user-name
+        =current_user.name
+      %ul.sidebar__header__box--menu
+        %li.sidebar__header__box--menu--list
+          =link_to new_group_path, class: "sidebar__header__box--menu--list--link" do
+            =fa_icon 'edit', class: "sidebar__header__box--menu--list--link--icon"
+        %li.sidebar__header__box--menu--list
+          =link_to edit_user_path(current_user), class: "sidebar__header__box--menu--list--link" do
+            =fa_icon 'cog', class: "sidebar__header__box--menu--list--link--icon"
+
+  .sidebar__groups
+    - current_user.groups.each do |group|
+      .sidebar__groups__group
+        = link_to group_messages_path(group), class: "sidebar__groups__group--a" do
+          %p.sidebar__groups__group--group-name
+            = group.name
+          %p.sidebar__groups__group--latest-msg
+            メッセージはまだありません。
