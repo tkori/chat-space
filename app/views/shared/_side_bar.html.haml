@@ -12,8 +12,8 @@
             =fa_icon 'cog', class: "sidebar__header__box--menu--list--link--icon"
 
   .sidebar__groups
-    .sidebar__groups__group
-      - current_user.groups.each do |group|
+    - current_user.groups.each do |group|
+      .sidebar__groups__group
         = link_to group_messages_path(group), class: "sidebar__groups__group--a" do
           %p.sidebar__groups__group--group-name
             = group.name
