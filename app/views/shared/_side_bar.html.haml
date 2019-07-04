@@ -1,0 +1,25 @@
+.sidebar
+  .sidebar__header
+    .sidebar__header__box
+      %p.sidebar__header__box--user-name
+        =current_user.name
+      %ul.sidebar__header__box--menu
+        %li.sidebar__header__box--menu--list
+          =link_to new_group_path, class: "sidebar__header__box--menu--list--link" do
+            =fa_icon 'edit', class: "sidebar__header__box--menu--list--link--icon"
+        %li.sidebar__header__box--menu--list
+          =link_to edit_user_path(current_user), class: "sidebar__header__box--menu--list--link" do
+            =fa_icon 'cog', class: "sidebar__header__box--menu--list--link--icon"
+
+  .sidebar__groups
+    .sidebar__groups__group
+      %p.sidebar__groups__group--group-name
+        test_group
+      %p.sidebar__groups__group--latest-msg
+        message1
+
+    .sidebar__groups__group
+      %p.sidebar__groups__group--group-name
+        test_group2
+      %p.sidebar__groups__group--latest-msg
+        message2
