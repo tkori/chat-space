@@ -10,8 +10,8 @@
     .main__header--edit-btn
       Edit
 
-    .main__messages
-      = render @messages
+  .main__messages
+    = render @messages
   
   .main__form
     = form_for [@group, @message], :html => {class: "main__form--form"} do |f|
