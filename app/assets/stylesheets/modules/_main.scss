@@ -1,6 +1,7 @@
 .main {
   width: calc(100vw - 300px);
   background-color: #fafafa;
+  overflow: scroll;
   &__header {
     height: 100px;
     background-color: #ffffff;
