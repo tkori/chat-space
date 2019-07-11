@@ -17,10 +17,8 @@ $(function(){
     var html = `<div class="main__messages__message">
                   <p class="main__messages__message--talker">${message.user.name}</p>
                   <p class='main__messages__message--date'>${formatted_date}</p>`
-    var cnt;
-    cnt = message.content ? `<p class='main__messages__message--text'>${message.content}</p>` : "";
-    var img;
-    img = message.image.url ? `<p><img class="main__messages__message--image" src="${message.image.url}"></p>` : "";
+    var cnt = message.content ? `<p class='main__messages__message--text'>${message.content}</p>` : "";
+    var img = message.image.url ? `<p><img class="main__messages__message--image" src="${message.image.url}"></p>` : "";
     html += cnt + img + "</div>"
     return html;
   }
