@@ -20,7 +20,7 @@ $(function(){
     var cnt;
     cnt = message.content ? `<p class='main__messages__message--text'>${message.content}</p>` : "";
     var img;
-    img = message.image.url ? `<img class="main__messages__message--image" src="${message.image.url}">` : "";
+    img = message.image.url ? `<p><img class="main__messages__message--image" src="${message.image.url}"></p>` : "";
     html += cnt + img + "</div>"
     return html;
   }
