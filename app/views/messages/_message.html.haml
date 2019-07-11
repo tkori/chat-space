@@ -2,7 +2,7 @@
   %p.main__messages__message--talker
     = message.user.name
   %p.main__messages__message--date
-    = message.created_at.strftime("%Y/%m/%d %H:%M")
+    = message.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
   - if message.content.present?
     %p.main__messages__message--text
       = message.content
