@@ -19,15 +19,21 @@
         color: #999999;
       }
     }
-    &--edit-btn {
+    &__edit-btn {
       height: 40px;
       padding: 0 20px;
+      color: #38AEF0;
       border: solid 1px #38AEF0;
       line-height: 40px;
       position: absolute;
       top: 28px;
       right: 40px;
-      color: #38AEF0;
+      &__link {
+        text-decoration: none;
+        &--edit {
+          color: #38AEF0;
+        }
+      }
     }
   }
 
