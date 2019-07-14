@@ -58,13 +58,13 @@ $(function(){
         })
         //メッセージを追加
         $('.main__messages').append(insertHTML);
-        $('.main__messages').animate({ scrollTop: $('.main__messages')[0].scrollHeight }, 500);
+        $('.main__messages').animate({ scrollTop: $('.main__messages')[0].scrollHeight }, 5000);
       })
       .fail(function() {
         console.log('error');
       });
     };
-
-    setInterval(reloadMessages, 5000);
   }
+
+  setInterval(reloadMessages, 500);
 });
