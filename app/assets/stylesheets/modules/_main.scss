@@ -1,7 +1,7 @@
 .main {
   width: calc(100vw - 300px);
+  height: 100%;
   background-color: #fafafa;
-  overflow: scroll;
   &__header {
     height: 100px;
     background-color: #ffffff;
@@ -38,10 +38,13 @@
   }
 
   &__messages {
-    height: 100%;
-    padding: 6px 40px 0;
+    height: calc(100vh - 100px - 90px);
+    padding: 6px 40px 20px;
     border-top: solid 1px #eeeeee;
+    box-sizing: border-box;
+    overflow: scroll;
     &__message {
+      box-sizing: border-box;
       padding-top: 40px;
       &--talker {
         font-size: 16px;
