@@ -18,3 +18,5 @@
 
 # ChatSpaceに投稿された画像
 public/uploads/*
+
+config/secrets.yml
