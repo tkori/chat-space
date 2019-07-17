@@ -19,7 +19,7 @@ gem 'font-awesome-rails'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'fog-aws'
+gem 'fog'
 
 group :development, :test do
   gem 'byebug', platform: :mri
