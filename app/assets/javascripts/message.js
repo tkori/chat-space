@@ -26,12 +26,12 @@ $(function(){
       var result = buildHTML(data);
       $('.main__messages').append(result);
       $('.main__messages').animate({ scrollTop: $('.main__messages')[0].scrollHeight }, 500);
-      $('#message_content').val('');
-      $('.main__form--form__box--label--uploader').val('');
+      $('#new_message')[0].reset();
       $('.main__form--form--submit').attr('disabled', false);
     })
     .fail(function(){
       alert('メッセージか画像を入力してください');
+      $('.main__form--form--submit').attr('disabled', false);
     })
   });
 
