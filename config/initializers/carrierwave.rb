@@ -14,5 +14,5 @@ CarrierWave.configure do |config|
   }
 
   config.fog_directory  = 'bucket-tkori-chat-space'
-  config.asset_host = 'https://bucket-tkori-chat-space.s3.amazonaws.com'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/bucket-tkori-chat-space'
 end
