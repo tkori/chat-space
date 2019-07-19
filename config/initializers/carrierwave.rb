@@ -13,6 +13,6 @@ CarrierWave.configure do |config|
       region: 'ap-northeast-1'
     }
 
-  config.fog_directory  = 'bucket-tkori-chat-space'
-  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/bucket-tkori-chat-space'
+  config.fog_directory  = 'tkori-chat-space'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/tkori-chat-space'
 end
