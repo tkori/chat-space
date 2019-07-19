@@ -30,7 +30,7 @@ $(function(){
       $('.main__form--form--submit').attr('disabled', false);
     })
     .fail(function(){
-      alert('メッセージか画像を入力してください');
+      alert('投稿に失敗しました');
       $('.main__form--form--submit').attr('disabled', false);
     })
   });
